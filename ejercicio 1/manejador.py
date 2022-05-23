@@ -44,5 +44,12 @@ class Manejador:
             j+=1
         print ('\nNombre de la facultad es {}, localidad de la facultad es {}, la carrera es {} y el codigo es {}'.format(self.__lista[i].getNombre(),self.__lista[i].getLocalidad(),self.__lista[i].getCarreraN(j),self.__lista[i].getCarreraC(j)))
     
-    def __dell__(self):
-        self.__lista.get
+    def Borrar(self,nombre):
+        i=0
+        j=0
+        while nombre != self.__lista[i].getCarreraN(j):
+            j+=1
+        if nombre != self.__lista[i].getCarreraN(j):
+            print('eliminando carrera')
+            self.__lista[i].Eliminar(j)
+    

@@ -40,10 +40,6 @@ class Facultad:
     def getCarreraD(self,i):
         return self.__ListaCarrera[i].getDuracion()
     
-    def getCarreraCantidad(self,i):
-        c=0
-        for j in range(len(self.__ListaCarrera)):
-            if self.__ListaCarrera[j]==i:
-                c+=1
-        print(c)
+    def Eliminar(self,i):
+        del self.__ListaCarrera[i]
         
